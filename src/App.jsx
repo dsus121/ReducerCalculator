@@ -44,8 +44,8 @@ function handleOperation(operation) {
 
   return (
       <div>
-        <input type="number" ref={firstInputRef} />
-        <input type="number" ref={secondInputRef} />  
+        <input className="input" type="number" ref={firstInputRef} />
+        <input className="input" type="number" ref={secondInputRef} />  
           <div>
           <button onClick={() => handleOperation('ADD')}>Add</button>
           <button onClick={() => handleOperation('SUBTRACT')}>Subtract</button>
@@ -53,7 +53,7 @@ function handleOperation(operation) {
           <button onClick={() => handleOperation('DIVIDE')}>Divide</button>
           <button onClick={() => handleOperation('CLEAR')}>Clear</button>
           <br />
-          {result}
+          <h1>{result}</h1>
           </div>
       </div>
   );
